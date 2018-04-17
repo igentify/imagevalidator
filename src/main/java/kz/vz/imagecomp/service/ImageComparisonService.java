@@ -12,5 +12,10 @@ import java.io.File;
  * basing on euristic similarity threshold
  */
 public interface ImageComparisonService {
+    /**
+     * Compares images, giving the outcome of whether they similar or not, as well as their similarity percentage
+     * @param target image to compare
+     * @param pattern pattern image
+     */
     ComparisonResult compare(File target, File pattern);
 }

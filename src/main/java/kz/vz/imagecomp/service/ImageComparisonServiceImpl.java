@@ -13,8 +13,7 @@ import static kz.vz.imagecomp.model.ComparisonResult.Outcome.SIMILAR;
 
 public class ImageComparisonServiceImpl implements ImageComparisonService {
 
-    // TODO[VZ]: The threshold value is just an example number, should be changed based on some testing
-    private static final double DIFFERENCE_THRESHOLD = 1;
+    private static final double DIFFERENCE_THRESHOLD = 0.5;
 
     public ComparisonResult compare(File target, File pattern) {
         BufferedImage imgA;

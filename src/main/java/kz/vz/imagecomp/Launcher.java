@@ -17,7 +17,7 @@ public class Launcher {
         // TODO[VZ]: Suppose that it would be easier with maven resources plugin; will try to change it if I have time
         ClassLoader classLoader = Launcher.class.getClassLoader();
         File pattern = new File(classLoader.getResource("Tree.jpg").getFile());
-        File target = new File(classLoader.getResource("TreeGreenerGrass.jpg").getFile());
+        File target = new File(classLoader.getResource("GoodTree.jpg").getFile());
 
         ComparisonResult comparisonResult = service.compare(target, pattern);
 
